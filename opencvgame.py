@@ -70,7 +70,7 @@ def gray_pic():
     # 保存灰度图像
     #cv2.imwrite("222.jpg", gray)
 def check_line():
-    img = cv2.imread('C:\\Users\\CB2-153\\Desktop\\deployment\\alley-5931413__480.jpg')
+    img = cv2.imread('C:\\Users\\CB2\\Desktop\\deployment\\alley-5931413__480.jpg')
 
     # 将图像转换为灰度图
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
