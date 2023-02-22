@@ -8,7 +8,7 @@ import  numpy as np
 #import torch
 #tt=YOLO("yolov5n.pt")
 def check_if_video_move():
-    cap = cv2.VideoCapture('C:\\Users\\CB2-153\\Desktop\\pic\\test.mp4')
+    cap = cv2.VideoCapture('C:\\Users\\CB2\\Desktop\\pic\\test.mp4')
     ret,frame1=cap.read()
     gray1=cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
     while True:
@@ -54,7 +54,7 @@ def check_if_video_move():
 
 def gray_pic():
     # 读取图像
-    img = cv2.imread("C:\\Users\\CB2-153\\Desktop\\deployment\\test2.jpg")
+    img = cv2.imread("C:\\Users\\CB2\\Desktop\\deployment\\test2.jpg")
     # 转换为灰度图像
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     ret, thresh = cv2.threshold(gray, 50, 255, cv2.THRESH_BINARY)
@@ -100,7 +100,7 @@ def check_line():
 
 def biaozhu():
     # 加载图像
-    img = cv2.imread('C:\\Users\\CB2-153\\Desktop\\deployment\\test11.png')
+    img = cv2.imread('C:\\Users\\CB2\\Desktop\\deployment\\test11.png')
 
     # 绘制矩形框
     cv2.rectangle(img, (100,100), (200, 200), (255,0, 255), 1)
@@ -115,7 +115,7 @@ def biaozhu():
 
 def huidubiaozhu():
     # 加载图像
-    img = cv2.imread('C:\\Users\\CB2-153\\Desktop\\deployment\\center.jpg')
+    img = cv2.imread('C:\\Users\\CB2\\Desktop\\deployment\\center.jpg')
     # 将图像转为灰度图像
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # 进行边缘检测
@@ -171,7 +171,7 @@ huidubiaozhu()
 
 def  ttt():
 
-    cap = cv2.VideoCapture('C:\\Users\\CB2-153\\Desktop\\pic\\test.mp4')  # 打开摄像头或视频文件
+    cap = cv2.VideoCapture('C:\\Users\\CB2\\Desktop\\pic\\test.mp4')  # 打开摄像头或视频文件
     prev_frame = None  # 前一帧图像
     threshold = 175  # 阈值
     kernel_size = 5
